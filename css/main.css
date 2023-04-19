@@ -12,6 +12,16 @@ body {
     font-size: 1em;
 }
 
+#home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#home > h2 {
+    margin: 10px 0px;
+    font-size: 1.5em;
+}
+
 a:visited {
     color: blue;
 }
@@ -85,7 +95,15 @@ nav {
 }
 
 #navbutton {
-    background-color: rgb(165, 216, 255);
+    background-color: rgb(165, 216, 255);    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#navbutton:hover {
+    background-color: rgb(206, 234, 255); ;
 }
 
 #navlinks > ul {
@@ -123,6 +141,10 @@ h1, #main > p {
         display: none;
     }
 
+    #navlinks {
+        display: grid;
+    }
+
     .places {
         flex-direction: row;
         flex-wrap: wrap;
@@ -154,18 +176,11 @@ h1, #main > p {
     .eye {
         width: 250px;
     }
-    #navbutton {
-        display: none;
-    }
 
     #navlinks > ul > li{
         margin: 0px 100px;
     }
 
-    .places {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
     .eyecontainer {
         row-gap: 75px;
     }
